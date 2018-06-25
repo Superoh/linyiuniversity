@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+.focus-box {  background-position:center; position:relative; font-family:'Microsoft YaHei'; }
+.focus-container { overflow:hidden; position:relative; visibility:hidden;}
+.focus-container .focus-item { position:absolute; width:100%; height: 100%; left:0; top:0; overflow: hidden;}
+.focus-container .focus-item img { width: 100%; height: 100%; border:0; vertical-align: top;}
+.focus-title-bar { position:absolute; right:0px; bottom:0px; z-index: 40; width: 100%; height: 30px; }
+.focus-title-bg { width: 100%; height: 100%; background-color: #000; opacity: 0.7; filter:alpha(opacity=70);}
+.focus-title { display: inline-block; white-space: nowrap; height: 30px; line-height: 30px; padding: 0 10px; color: #fff; font-size: 14px; position: absolute; left: 0; top: 0; z-index: 50;}
+.focus-title a,.focus-text a {color: #fff; text-decoration: none;}
+.focus-title a:hover,.focus-text a:hover { color: #e5e5e5; text-decoration: none;}
+.focus-text-box { position:absolute; left:30px; top:10px; z-index: 20; width: 40%; height: 100px;}
+.focus-text-bg { width: 100%; height: 100%; background-color: #000; opacity: 0.7; filter:alpha(opacity=70);}
+.focus-text-inner { position: absolute; left: 0; top: 0; z-index: 30; height: 100%; overflow: hidden;}
+.focus-text{ padding:10px; line-height: 1.5; color: #fff; font-size: 13px; }
+.focus-navigation {display:block;width: 30px;height: 74px;line-height: 74px;background: url(../images/pre.png) no-repeat;font-size: 0;text-decoration: none;cursor:pointer;position:absolute;top:50%;margin-top: -37px;z-index: 50;}
+.focus-navigation:hover {font-size: 0;}
+.focus-navigation:active {font-size: 0;}
+.focus-prev {left:0px;background-position: 0 0;}
+.focus-next {right:0px;background-position: -52px 0;}
+.focus-pagination { position:absolute; right:10px; bottom:0; z-index:60; height:20px; text-align:right;}
+.focus-page { display:inline-block; width:10px; height:10px; line-height:10px; text-align:center; font-size:12px; text-decoration: none; font-family:Arial, Helvetica, sans-serif; overflow:hidden; border-radius:5px; background-color:#999; color:#fff; margin-right:5px; cursor:pointer;}
+.focus-page span { display: none;}
+.focus-page:hover { text-decoration: none; font-size: 12px; color: #fff; font-weight: bold; }
+.focus-page-active { background-color:#ff4019;}
+
+/* sudyExtend */
+/**选择菜单**/
+.sudy-select { display:inline-block; position:relative; z-index:100;}
+.sudy-select .select-name { display:inline-block; line-height:24px; padding:0 22px 0 5px; background:url(images/arrow01_down.gif) no-repeat right 50%; border:1px solid #CCC; cursor:pointer;}
+.select-down .select-name { background-image:url(images/arrow01_up.gif);}
+.select-down .select-open { background-image:url(images/arrow01_down.gif);}
+.select-up .select-name { background-image:url(images/arrow01_down.gif);}
+.select-up .select-open { background-image:url(images/arrow01_up.gif);}
+.sudy-select .select-list { border:1px solid #999; position:absolute; left:0; background-color:#fff; display:none; z-index:100; z-index:100; _margin-top:_2px;}
+.sudy-select .select-list li { line-height:24px; cursor:pointer; white-space:nowrap;}
+.sudy-select .select-list li.hover { background-color:#06C; color:#fff;}
+
+/**日历**/
+.sudy-pubdate { width:42px; height:42px; border-radius:5px; overflow:hidden; background-color:#f2f2f2; border:1px solid #8d1212;}
+.sudy-pubdate span { display:block; width:100%; font-family:Tahoma, Geneva, sans-serif; font-size:14px; font-weight:bold; text-align:center;}
+.sudy-pubdate span.pubdate-month { height:20px; line-height:20px; font-size:16px; color:#fff; border-bottom:1px solid #999; background-color:#C00;}
+.sudy-pubdate span.pubdate-day { height:20px; border-top:1px solid #e5e5e5; background-color:#f2f2f2;}
+
+/**选项卡**/
+.sudy-tab {}
+.sudy-tab .tab-menu { height:24px; border-bottom:1px solid #ccc;}
+.sudy-tab .tab-menu li { display:inline-block; height:24px; line-height:24px; float:left; font-size:14px; font-weight:bold; color:#333; padding:0 10px; border-radius:5px 5px 0 0; cursor:default;}
+.sudy-tab .tab-menu li.selected { background-color:#06C; color:#fff;}
+
+/**输入框提示**/
+.sudy-input {display:inline-block; _display:inline; position:relative; font-family:Tahoma, Geneva, sans-serif; vertical-align:top;}
+.sudy-input input,.sudy-input textarea { display:inline-block; height:17px; line-height:17px; color:#333; font-size:13px; vertical-align:top; padding:3px; background-color:#fff; border:1px solid #ccc; outline:none; border-radius:3px; overflow:hidden;}
+.sudy-input textarea { height:85px;}
+.sudy-input .tip { display:block; height:25px; line-height:25px; color:#888; font-size:13px; position:absolute; left:10px; top:0;}
+
+/**链接菜单**/
+.links-wrap {position: relative;float: left;display: inline-block;margin-left: 0px;width: 185px;height: 30px;line-height: 30px;margin-bottom: 16px;}
+.links-wrap a.links-arrow {font-size:13px;display: block;height: 30px;line-height: 30px;padding: 0 32px 0 25px;color: #fff;background: #8b7a7a url(images/arrow.png) no-repeat 153px 0;text-align:left;}
+.links-wrap a.links-arrow:hover {background: #8b7a7a url(images/arrow.png) no-repeat 153px 0;cursor: pointer;}
+.links-wrap .link-items {position: absolute;width: auto;min-width: 183px;height:auto;max-height: 330px;overflow: auto;overflow-x:hidden;left: 0;bottom: 30px;background: #fff;display: none;border: 1px solid #8b7a7a;}
+.links-wrap .link-items a { display: block; line-height: 20px; padding: 5px 6px; color: #000;}
+.links-wrap .link-items a span { display:block; margin:0 6px; white-space:nowrap; _white-space:normal;}
+.links-wrap .link-items a:hover { color: #fff; background: #0074cd; cursor: pointer;}
+
+/**scroll滚动**/
+.sudy-scroll { position:relative;}
+.sudy-scroll-wrap { position:relative; left:0; top:0; overflow:hidden;}
+.sudy-scroll-nav .nav-prev,.sudy-scroll-nav .nav-next { display:block; width:20px; height:24px; text-align:center; line-height:24px; font-size:18px; font-family:Tahoma, Geneva, sans-serif; color:#fff; background:#666; cursor:pointer; position:absolute; top:50%; margin-top:-12px; z-index:100;}
+.sudy-scroll-nav .nav-prev:active,.sudy-scroll-nav .nav-next:active { background:#454545;}
+.sudy-scroll-nav .nav-next { right:-22px;}
+.sudy-scroll-nav .nav-prev { left:-22px;}
+.sudy-scroll-page { width:100%; height:10px; text-align:center; position:absolute; left:0; bottom:-15px; z-index:100;}
+.sudy-scroll-page .page-index { display:inline-block; width:10px; height:10px; border-radius:5px; overflow:hidden; background:#666; margin:0 3px;}
+.sudy-scroll-page .active { background:#F30}
+.sudy-scroll-page .page-index span { display:none;}
+
+
+
+@charset "UTF-8";
+/**
+ * [xLarge Screen for PC]
+ * >=1200
+ */
+@media screen and (min-width: 1200) {
+	
+}
+
+/**
+ * [Large Screen for PC & Pad]
+ * 960~1199
+ */
+@media screen and (max-width: 1199px) {
+	.wp-wrapper .wp-inner { margin: 0 6px;}
+	.wp-focus .wp-inner { margin: 0 auto;}
+	.wp-banner .wp-inner { margin: 0 auto;}
+	.wp-main-page .cbox-left { width: 78.6%; float: left;}
+	.wp-post.post-7 .news_r .post-news .news-item { padding-top: 3px;}
+	.wp-post.post-27 .post-news .news-item { padding-top: 3px;}
+	.wp-post.post-47 .post-news .news-item { padding-top: 3px;}
+}
+
+/**
+ * [Medium Screen for Pad]
+ * 768~959
+ */
+@media screen and (max-width: 959px) {
+	.main-nav-panel .wp-menu .menu-item a.menu-link { padding:0 15px;}
+	.focus-navigation { visibility: hidden;}
+	.wp-footer .wp-inner .footer .copyright,.wp-footer .wp-inner .footer .address { display: block;}
+
+	/**主体布局**/
+	.wp-main-page .cbox-left { width: 100%; float: left;}
+	.wp-main-page .cbox-right { width: 100%; float: left; margin-top: 20px;}
+	.wp-post.post-8 { width: 100%; margin-bottom: 26px; float: left;}
+	.wp-post.post-8 .wp-menu .menu-item { display: block; width: 33%; float: left; margin-right: 0.33%;}
+	.links-wrap { margin-left: 20px;}
+	
+	/**栏目列表**/
+	.wp-column-menu { width: 100%; float: none; margin: 0;}
+	.wp-column-news {float: none;}
+	.wp-column-news .column-news-box { margin: 0 6px;}
+	.column-head .column-anchor {padding: 6px;}
+	.column-head .column-anchor .column-switch { display: block;}
+	.column-head .column-anchor h3.anchor-title { font-size: 16px;}
+	.column-list-wrap li a { background-position: 10px 14px;}
+	.column-list-wrap li a,.column-list-wrap li.selected a.selected { background-position: 10px 14px;}
+	.column-list-wrap li a span { padding-top: 6px; padding-bottom: 6px;}
+	.column-body { display: none;}
+	.list-meta .column-title {font-size: 16px; }
+	.info-box {margin:0 14px;}
+	.article { padding: 10px 0;}
+	.article h1.arti-title { padding: 5px 0;}
+	
+	.wp-footer .wp-inner { background: none; padding: 15px 0;}
+}
+
+/**
+ * [Small Screen for Smart Phone and Mini Pad]
+ * 480~767
+ */
+@media screen and (max-width: 767px) {
+	body,p { font-size: 14px;}
+	a { font-size: 14px;}
+	.wp-header .wp-inner {}
+	.wp-post .post-head .post-title { font-size: 16px; font-weight: bold;}
+	.post-news .news-item { line-height: 24px;}
+	.post-news .news-item .meta-title,.column-news-list .column-news-item .column-news-title { margin-right: 0;}
+	.post-news .news-item .news-date-hide,.column-news-list .column-news-item .news-date-hide { display: none;}
+	.wp-header { padding: 0;}
+	.wp-navi { display: none;}
+	.wp-navi-slide { display: none; background-color: #eee;}
+	.wp-navi-slide .navi-slide-head { display: none;}
+	.wp-navi-slide .wp-menu { display: none;}
+	.main-nav-panel .wp-menu .menu-item { display: block; float: none; border-top: 1px solid #ddd; overflow: hidden; }
+	.main-nav-panel .wp-menu .menu-item a.menu-link { display: block; height: 39px; line-height: 39px; padding:0 18px; color: #222; font-size: 15px; background-color: #fff; }
+	.main-nav-panel .wp-menu .menu-item a.menu-link:hover { text-decoration: none; color: #fff; background-color: #0C3C74}
+	.wp-main-page .content .cbox-left,.wp-main-page .content .cbox-right{ width: 100%; float: none;}
+
+	.wp-header .wp-panel {margin:0; float: none; clear: both; width: auto;}
+	.wp-header .search-panel { margin-bottom: 10px;}
+	.wp-header .logo-panel { position: relative; }
+	.wp-header .navi-aside-toggle-show { display: block;}
+	.logo-window { width: auto; margin:0 40px; padding: 15px 0; text-align: center;}
+	.logo-window img {width: 100%; max-width: 186px;}
+	.lang-panel,.top-nav-panel { display: none;}
+	
+	.wp-container { padding: 15px 0;}
+	.wp-main-page .cbox-left .cbox-left-bot { padding-top: 15px;}
+	
+	.wp-post.post-7 { width: 100%; float: none;}
+	.wp-post.post-7 .news_l { width: 100%; float: none;}
+	.wp-post.post-7 .news_r { width: 100%; float: none; padding-top: 15px;}
+	.wp-post.post-17 { width: 100%; float: none; padding-top: 15px;}
+	.wp-post.post-27 {width: 100%;float: none;}
+	.wp-post.post-37 {width: 100%;float: none;padding-top: 15px;}
+	.wp-post.post-47 {width: 100%;float: none;padding-top: 15px;}
+	.wp-post.post-8 { width: 100%; margin-bottom: 15px; float: none;}
+
+	.wp-info-page .top-nav-panel,.wp-column-page .top-nav-panel { display: none;}
+	.wp-banner {}
+	.wp-banner .column-name { display: block;}
+	.list-meta .column-path,.list-meta .column-title { float: none;}
+	.list-meta .column-title { display: none;}
+	.list-meta .column-path { padding-left: 24px; background: url(img/sitemap-icon.png) no-repeat 0 4px;}
+	.list-meta .column-path .path-name { display: none;}
+	.wp_paging .pages_count,.wp_paging .page_jump { display: none;}
+
+	.info-box {margin:0 10px;}
+	.article { padding: 6px 0;}
+	.article .arti-metas span { font-size: 14px;}
+	.article .arti-metas .read-options { display: inline-block;}
+	.wp_entry,.wp_entry p,.article .entry,.article .entry p { font-size: 14px;}
+	
+	.links-wrap { display: block; margin-left: 20px; float: none; margin: 0 auto 16px;}
+	.wp-footer .wp-inner .footer .foot_l { float: none; text-align: left; width: 100%;}
+	.wp-footer .wp-inner .footer .foot_r { float: none; text-align: left; width: 100%;}
+}
+
+/**
+ * [xSmall Screen for Smart Phone]
+ * 480~767
+ */
+@media screen and (max-width: 479px) {
+	.info-box {margin:0 6px;}
+	.wp-post.post-8 .wp-menu .menu-item a.menu-link { font-size: 13px;}
+}
+
+/**
+ * [Tiny Screen for Older Phone and Smart Phone]
+ * <319
+ */
+@media screen and (max-width: 319px) {
+	.top-nav-panel .wp-menu .menu-item a.menu-link { font-size: 14px; height: 28px; line-height: 28px;}
+	.wp-footer .wp-inner .footer .address,.wp-footer .wp-inner .footer .zipcode { display: inline;}
+	.wp-footer .wp-inner .footer .icp { display: block; }
+}

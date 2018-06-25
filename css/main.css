@@ -1,0 +1,449 @@
+
+#navi {
+    background: #514343;
+    height: 32px;
+}
+
+.nav-item {
+    color: #d5d3d3 ;
+    font-size: 14px;
+    /* width: 43px; */
+    /* height: 32px; */
+    text-align: center;
+}
+
+#menu {
+    background: url(../images/head_bg.png) #ca1d29 no-repeat center top;
+}
+
+#menu_top{
+    height: 114px;
+}
+
+#logo {
+    padding: 0px;
+    width: 213px;
+    height: 60px;
+    margin: 18px 300px 18px 176px;
+}
+
+#logo_left {
+    margin-left: 360px;
+    height: 100px;
+    width: 465px;
+    padding: 0px;
+}
+
+#menu1 {
+    width: 100%;
+    height: 38px;
+    background-color:#ca1d29;
+    position: relative;
+    padding: 0px;
+    margin: 0px 0px 0px 298px;
+}
+
+#menu1 ul {
+    padding: 0px;
+    margin: 0px;
+    /* 取消自前面的圆点 */
+    list-style-type: none;
+    z-index: 100;
+}
+
+#menu1 ul li {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    width: 124px;
+}
+
+#menu1 ul li a,#menu1 ul li a:visited,
+#menu1 ul li a:visited ul li a:visited ,
+#menu1 ul li a:visited ul li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 104px;
+    height: 38px;
+    color: white;
+    background:#ca1d29;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+/* make the dropdown ul invisible */
+
+#menu1 ul li ul,
+#menu ul li:hover ul li ul {
+    display: none;
+}
+
+
+
+#menu1 ul li:hover a ,
+#menu1 ul li:hover a ul li:hover a 
+{
+    /* 主菜单 */
+    color: #fff;
+    background:#b7020e; ;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu1 ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 105px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu1 ul li ul li:hover ul{
+    display: block;
+    position: absolute;
+    width: 105px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#menu1 ul li:hover ul li {
+    float: left;
+    width: 104px;
+    background:#ca1d29;
+}
+
+#menu1 ul li:hover ul li a {
+    display: block;
+    background:#ca1d29;
+    color: white;
+    width: 104px;
+    padding: 0px;
+    margin: 0px;
+    /*控制下拉框的宽度*/
+}
+
+/* style the background and forground colors of the links on hover */
+
+#menu1 ul li:hover ul li a:hover {
+    background: #b7020e;
+    color: white;
+}
+
+
+
+/* 滚动画廊的css */
+
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+
+.img-fluid {
+    width: auto;
+    height: 460px;
+}
+
+.picleft {
+    background: url(../images/pre.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 74px;
+    margin-left: 0px;
+    /* padding-left: 0px; */
+    /* margin-top: 450px; */
+}
+
+.picright {
+    background: url(../images/pre.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 74px;
+    /* margin-right: 250px; */
+    /* margin-top: 450px; */
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.carousel-indicators {
+   /* margin: 0  0  */
+    width: 66px;
+}
+
+/* 底部 */
+.footer{
+    height: 118px;
+    background: #ca1d29 url(../images/logo_g.png) no-repeat center;;
+}
+
+.footer-left{
+    margin-left: 175px;
+    float: left;
+    margin-top: 36px;
+}
+.footer-right{
+    margin-top: 36px;
+    float: right;
+    margin-right: 185px;
+}
+
+.dropdown{
+    background: #6c757d;
+}
+
+.footer p{
+    color: white; 
+}
+
+a {
+    text-decoration: none;
+    color: #040000;
+}
+
+.wp-inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**焦点图片**/
+
+.wp-container {
+    padding: 35px 0;
+}
+
+.cbox-left {
+    width: 979.2px;
+    float: left;
+}
+
+.cbox-right {
+    width: 185px;
+    float: right;
+}
+
+.post-head {
+    height: 39px;
+}
+
+.head-bar {
+    position: relative;
+}
+
+.post-title {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ca1d29;
+    padding-bottom: 15px;
+}
+
+.post-more {
+    height: 20px;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 2px;
+}
+
+.post-more a {
+    color: #e67f11;
+}
+
+.post-news .news-item {
+    line-height: 24px;
+    vertical-align: top;
+    overflow: hidden;
+    position: relative;
+    padding-top: 9px;
+}
+
+.meta-title {
+    display: block;
+    overflow: hidden;
+    font-size: 15px;
+    /* max-height: 48px; */
+}
+
+.meta-title a:hover {
+    color: #040000;
+    /* font-weight: bold; */
+}
+
+.meta-time {
+    display: block;
+    text-align: left;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.post-7 {
+    width: 64.8%;
+    float: left;
+}
+
+.news_l {
+    width: 47.4%;
+    float: left;
+}
+
+/* .news-item { padding-top: 0;} */
+
+.item-picture {
+    display: block;
+    overflow: hidden;
+}
+
+.item-title {
+    display: block;
+    overflow: hidden;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px 0;
+}
+
+.item-title a {
+    color: #040000;
+}
+
+.item-time {
+    display: block;
+    text-align: left;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.item-summery {
+    display: block;
+    overflow: hidden;
+    font-size: 12px;
+    max-height: 72px;
+}
+
+.news_r {
+    width: 47.4%;
+    float: right;
+    border-top: 3px solid #ca1d29;
+}
+
+.news-item {
+    padding-top: 9px;
+}
+
+.wp-post.post-17 {
+    width: 30.6%;
+    float: right;
+}
+
+.wp-post.post-17 .post-body {
+    border-top: 3px solid #ca1d29;
+}
+
+.wp-post.post-17 .post-news .news-item .meta-title {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.wp-post.post-27 {
+    width: 30.6%;
+    float: left;
+    margin-right: 3.5%;
+}
+
+.wp-post.post-27 .post-body {
+    border-top: 3px solid #ca1d29;
+}
+
+.wp-post.post-37 .post-body {
+    border-top: 3px solid #ca1d29;
+}
+
+.wp-post.post-37 {
+    width: 30.6%;
+    float: left;
+    margin-right: 3.5%;
+}
+
+.wp-post.post-47 {
+    width: 30.6%;
+    float: right;
+}
+
+.wp-post.post-47 .post-body {
+    border-top: 3px solid #ca1d29;
+}
+
+.wp-post.post-8 {
+    margin-bottom: 26px;
+}
+
+.wp-post.post-8 .wp-menu .menu-item {
+    display: block;
+}
+
+.wp-post.post-8 .wp-menu .menu-item a.menu-link {
+    display: block;
+    padding-left: 20px;
+    height: 37px;
+    line-height: 37px;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 1px;
+    background: url(../images/sanj.png) #8b7a7a no-repeat 158px center;
+}
+
+.wp-post.post-8 .wp-menu .menu-item a.menu-link:hover {
+    background: url(../images/sanj.png) #ca1d29 no-repeat 158px center;
+    color: #fff;
+}
+
+.wp-post.post-18 {
+    margin-bottom: 26px;
+}
+
+.wp-post.post-18 .meida_tit {
+    background: #ca1d29;
+}
+
+.wp-post.post-18 .meida_tit .tit {
+    font-size: 15px;
+    font-weight: bold;
+    width: 49.9%;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.wp-post.post-18 .meida_pic {
+    background: #aea2a2;
+}
+
+.wp-post.post-18 .meida_pic .pic {
+    width: 49.9%;
+    float: left;
+    text-align: center;
+    padding: 11px 0 17px;
+}
+
+.dropdown a:hover{
+    color:white;
+}
+
+.dropdown-item:hover{
+    background: blue;
+    color: white;
+}
